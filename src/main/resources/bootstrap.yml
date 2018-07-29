@@ -1,0 +1,12 @@
+server:
+  port: 8444
+spring:
+  application:
+    name: sampleGateway
+management:
+  security:
+    enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

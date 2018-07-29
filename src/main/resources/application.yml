@@ -1,0 +1,14 @@
+zuul:
+  ignored-services: '*'
+  routes:
+    sampleApplication1:
+      path: /service1/**
+      serviceId: sampleApplication1
+    sampleApplication2:
+      path: /service2/**
+      serviceId: sampleApplication2
+    eureka:
+      path: /dashboard/**
+      url: http://localhost:8761/
+  prefix: /chathu
+  sensitive-headers: Cookie,set-Cookiels
